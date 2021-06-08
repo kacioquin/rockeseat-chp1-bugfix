@@ -40,7 +40,6 @@ app.put("/repositories/:id", (request, response) => {
 
   const repository = { ...repositories[repositoryIndex], ...updatedRepository };
 
-
   repository.likes = repositories[repositoryIndex].likes
 
   return response.json(repository);
